@@ -89,6 +89,17 @@ fn main() {
         thread::spawn(move || {
             scan(tx, i, arguments.ipaddr, num_threads);
         });
+    }
 
+    let mut out = vec![];
+    drop(tx);
+    for p in rx {
+        out.push(p);
+    }
+
+    println!("");
+    out.sort();
+    for v in out {
+        println!("{} is open", v);
     }
 }
