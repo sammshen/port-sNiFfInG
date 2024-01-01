@@ -1,3 +1,4 @@
+A multi-threaded port sniffer in Rust.   
 This is my first official "fight" with Rust's borrow-checker, so to speak. Now I'm officially a Rust newbie :)
 
 Here are a few things I picked up:
